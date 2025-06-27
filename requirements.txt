@@ -1,1 +1,0 @@
-pyfred-cli @ git+https://github.com/acourtneybrown/pyfred-cli@main
