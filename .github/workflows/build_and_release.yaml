@@ -17,15 +17,16 @@ jobs:
       uses: actions/setup-python@v4
       with:
         python-version: "3.9"
-        cache: pip
 
     - name: Install pyfred
       run: |
         pip install git+https://github.com/acourtneybrown/pyfred-cli@main
 
     - name: Package
+      env:
+        REPO: ${{ github.event.repository.name }}
       run: |
-        pyfred package
+        pyfred package --name $REPO
 
     - name: Build Changelog
       id: github_release
