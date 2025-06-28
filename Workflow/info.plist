@@ -218,7 +218,7 @@ I use ⌃⌥⇧1 (MEH-1 when using QMK firmware).</string>
 		<string>.:vendored</string>
 	</dict>
 	<key>version</key>
-	<string>0.0.2</string>
+	<string>0.0.3</string>
 	<key>webaddress</key>
 	<string>https://github.com/acourtneybrown/1password-quick-paste</string>
 </dict>
