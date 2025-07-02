@@ -68,11 +68,11 @@
 				<key>focusedappvariablename</key>
 				<string></string>
 				<key>hotkey</key>
-				<integer>0</integer>
+				<integer>18</integer>
 				<key>hotmod</key>
-				<integer>0</integer>
+				<integer>917504</integer>
 				<key>hotstring</key>
-				<string></string>
+				<string>1</string>
 				<key>leftcursor</key>
 				<false/>
 				<key>modsmode</key>
@@ -157,6 +157,8 @@
 ## Usage
 
 Reads the configured secret reference from 1Password, copies to the clipboard  and pastes into the frontmost app.  As part of the configuration, you need to set the hotkey.
+
+![Copying the secret reference from 1Password](images/img.png)
 
 ## Installation
 
