@@ -168,23 +168,23 @@ Reads the configured secret reference from 1Password, copies to the clipboard  a
 		<key>732400a2-1512-4367-ae61-25c9ff63e34f</key>
 		<dict>
 			<key>xpos</key>
-			<real>515</real>
+			<real>515.0</real>
 			<key>ypos</key>
-			<real>15</real>
+			<real>15.0</real>
 		</dict>
 		<key>AEC674F1-8C51-401A-AB83-23E39B07AE78</key>
 		<dict>
 			<key>xpos</key>
-			<real>335</real>
+			<real>335.0</real>
 			<key>ypos</key>
-			<real>15</real>
+			<real>15.0</real>
 		</dict>
 		<key>CDD7742F-9D93-4110-8FF2-539265EC6C0C</key>
 		<dict>
 			<key>xpos</key>
-			<real>685</real>
+			<real>685.0</real>
 			<key>ypos</key>
-			<real>15</real>
+			<real>15.0</real>
 		</dict>
 		<key>E632E482-35CC-4947-92F0-C9312695B72C</key>
 		<dict>
@@ -193,9 +193,9 @@ Reads the configured secret reference from 1Password, copies to the clipboard  a
 
 I use ⌃⌥⇧1 (MEH-1 when using QMK firmware).</string>
 			<key>xpos</key>
-			<real>160</real>
+			<real>160.0</real>
 			<key>ypos</key>
-			<real>15</real>
+			<real>15.0</real>
 		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>
@@ -228,7 +228,7 @@ I use ⌃⌥⇧1 (MEH-1 when using QMK firmware).</string>
 		<string>.:vendored</string>
 	</dict>
 	<key>version</key>
-	<string>0.0.0</string>
+	<string>0.1.0</string>
 	<key>webaddress</key>
 	<string>https://github.com/acourtneybrown/1password-quick-paste</string>
 </dict>
