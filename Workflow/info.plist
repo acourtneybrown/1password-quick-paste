@@ -6,11 +6,62 @@
 	<string>com.notcharlie.1password-quick-paste</string>
 	<key>connections</key>
 	<dict>
-		<key>732400a2-1512-4367-ae61-25c9ff63e34f</key>
+		<key>1266D124-1E29-4A19-B1B8-A65153CB3227</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>C57FC5ED-AB46-4301-B0A4-1FA07DFA586F</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>1C197363-62E6-4CC6-977C-749CECEB56F1</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>1FBF32EB-D94B-4BA9-BFB5-A84372C6A3E5</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
 				<string>CDD7742F-9D93-4110-8FF2-539265EC6C0C</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>C592CA81-9A14-4E8F-80A9-715DD25E98B8</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>732400a2-1512-4367-ae61-25c9ff63e34f</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>1FBF32EB-D94B-4BA9-BFB5-A84372C6A3E5</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>8D38EE55-17FC-42E8-B152-C2BD45E6E29F</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>1266D124-1E29-4A19-B1B8-A65153CB3227</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -28,6 +79,21 @@
 				<integer>0</integer>
 				<key>modifiersubtext</key>
 				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>C592CA81-9A14-4E8F-80A9-715DD25E98B8</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>8D38EE55-17FC-42E8-B152-C2BD45E6E29F</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>1C197363-62E6-4CC6-977C-749CECEB56F1</string>
 				<key>vitoclose</key>
 				<false/>
 			</dict>
@@ -56,6 +122,48 @@
 	<string>1password-quick-paste</string>
 	<key>objects</key>
 	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>script</key>
+				<string></string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>1p-copy-ref.sh</string>
+				<key>type</key>
+				<integer>8</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>AEC674F1-8C51-401A-AB83-23E39B07AE78</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>autopaste</key>
+				<true/>
+				<key>clipboardtext</key>
+				<string>{query}</string>
+				<key>ignoredynamicplaceholders</key>
+				<false/>
+				<key>transient</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>732400a2-1512-4367-ae61-25c9ff63e34f</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
@@ -109,46 +217,120 @@
 			<integer>1</integer>
 		</dict>
 		<dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.junction</string>
+			<key>uid</key>
+			<string>1FBF32EB-D94B-4BA9-BFB5-A84372C6A3E5</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
 			<key>config</key>
 			<dict>
-				<key>autopaste</key>
-				<true/>
-				<key>clipboardtext</key>
-				<string>{query}</string>
-				<key>ignoredynamicplaceholders</key>
-				<false/>
-				<key>transient</key>
-				<true/>
+				<key>tasksettings</key>
+				<dict/>
+				<key>taskuid</key>
+				<string>com.alfredapp.automation.core/macOS/clipboard.clear</string>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.output.clipboard</string>
+			<string>alfred.workflow.automation.task</string>
 			<key>uid</key>
-			<string>732400a2-1512-4367-ae61-25c9ff63e34f</string>
+			<string>C57FC5ED-AB46-4301-B0A4-1FA07DFA586F</string>
 			<key>version</key>
-			<integer>3</integer>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
 				<key>concurrently</key>
-				<false/>
+				<true/>
 				<key>escaping</key>
-				<integer>0</integer>
+				<integer>102</integer>
 				<key>script</key>
-				<string></string>
+				<string>function clipboard_hash {
+  /usr/bin/pbpaste | /usr/bin/shasum
+}
+
+readonly itinial_hash="$(clipboard_hash)"
+sleep "${copy_cleanup_seconds}"
+[[ "${itinial_hash}" == "$(clipboard_hash)" ]] &amp;&amp; printf 'true'</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
-				<string>1p-copy-ref.sh</string>
+				<string></string>
 				<key>type</key>
-				<integer>8</integer>
+				<integer>11</integer>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
-			<string>AEC674F1-8C51-401A-AB83-23E39B07AE78</string>
+			<string>8D38EE55-17FC-42E8-B152-C2BD45E6E29F</string>
 			<key>version</key>
 			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string></string>
+						<key>matchcasesensitive</key>
+						<true/>
+						<key>matchmode</key>
+						<integer>5</integer>
+						<key>matchstring</key>
+						<string></string>
+						<key>outputlabel</key>
+						<string>Clear</string>
+						<key>uid</key>
+						<string>1C197363-62E6-4CC6-977C-749CECEB56F1</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string></string>
+				<key>hideelse</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.conditional</string>
+			<key>uid</key>
+			<string>1266D124-1E29-4A19-B1B8-A65153CB3227</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string>{var:copy_cleanup_seconds}</string>
+						<key>matchcasesensitive</key>
+						<true/>
+						<key>matchmode</key>
+						<integer>2</integer>
+						<key>matchstring</key>
+						<string>0</string>
+						<key>outputlabel</key>
+						<string>Clear</string>
+						<key>uid</key>
+						<string>1C197363-62E6-4CC6-977C-749CECEB56F1</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string></string>
+				<key>hideelse</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.conditional</string>
+			<key>uid</key>
+			<string>C592CA81-9A14-4E8F-80A9-715DD25E98B8</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 	</array>
 	<key>readme</key>
@@ -165,26 +347,63 @@ Reads the configured secret reference from 1Password, copies to the clipboard  a
 [➡️ Download the latest release](https://github.com/acourtneybrown/1password-quick-paste/releases)</string>
 	<key>uidata</key>
 	<dict>
+		<key>1266D124-1E29-4A19-B1B8-A65153CB3227</key>
+		<dict>
+			<key>xpos</key>
+			<real>995</real>
+			<key>ypos</key>
+			<real>175</real>
+		</dict>
+		<key>1FBF32EB-D94B-4BA9-BFB5-A84372C6A3E5</key>
+		<dict>
+			<key>xpos</key>
+			<real>690</real>
+			<key>ypos</key>
+			<real>45</real>
+		</dict>
 		<key>732400a2-1512-4367-ae61-25c9ff63e34f</key>
 		<dict>
 			<key>xpos</key>
-			<real>515.0</real>
+			<real>515</real>
 			<key>ypos</key>
-			<real>15.0</real>
+			<real>15</real>
+		</dict>
+		<key>8D38EE55-17FC-42E8-B152-C2BD45E6E29F</key>
+		<dict>
+			<key>note</key>
+			<string>Wait to clear clipboard if unchanged</string>
+			<key>xpos</key>
+			<real>835</real>
+			<key>ypos</key>
+			<real>145</real>
 		</dict>
 		<key>AEC674F1-8C51-401A-AB83-23E39B07AE78</key>
 		<dict>
 			<key>xpos</key>
-			<real>335.0</real>
+			<real>335</real>
 			<key>ypos</key>
-			<real>15.0</real>
+			<real>15</real>
+		</dict>
+		<key>C57FC5ED-AB46-4301-B0A4-1FA07DFA586F</key>
+		<dict>
+			<key>xpos</key>
+			<real>1080</real>
+			<key>ypos</key>
+			<real>145</real>
+		</dict>
+		<key>C592CA81-9A14-4E8F-80A9-715DD25E98B8</key>
+		<dict>
+			<key>xpos</key>
+			<real>735</real>
+			<key>ypos</key>
+			<real>175</real>
 		</dict>
 		<key>CDD7742F-9D93-4110-8FF2-539265EC6C0C</key>
 		<dict>
 			<key>xpos</key>
-			<real>685.0</real>
+			<real>835</real>
 			<key>ypos</key>
-			<real>15.0</real>
+			<real>15</real>
 		</dict>
 		<key>E632E482-35CC-4947-92F0-C9312695B72C</key>
 		<dict>
@@ -193,9 +412,9 @@ Reads the configured secret reference from 1Password, copies to the clipboard  a
 
 I use ⌃⌥⇧1 (MEH-1 when using QMK firmware).</string>
 			<key>xpos</key>
-			<real>160.0</real>
+			<real>160</real>
 			<key>ypos</key>
-			<real>15.0</real>
+			<real>15</real>
 		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>
@@ -220,6 +439,32 @@ I use ⌃⌥⇧1 (MEH-1 when using QMK firmware).</string>
 			<string>textfield</string>
 			<key>variable</key>
 			<string>op_ref</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>defaultvalue</key>
+				<integer>30</integer>
+				<key>markercount</key>
+				<integer>5</integer>
+				<key>maxvalue</key>
+				<integer>120</integer>
+				<key>minvalue</key>
+				<integer>0</integer>
+				<key>onlystoponmarkers</key>
+				<true/>
+				<key>showmarkers</key>
+				<true/>
+			</dict>
+			<key>description</key>
+			<string>Number of seconds to wait before erasing copied value.
+"0" to disable</string>
+			<key>label</key>
+			<string>Clipboard Cleanup</string>
+			<key>type</key>
+			<string>slider</string>
+			<key>variable</key>
+			<string>copy_cleanup_seconds</string>
 		</dict>
 	</array>
 	<key>variables</key>
