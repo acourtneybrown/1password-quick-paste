@@ -350,60 +350,60 @@ Reads the configured secret reference from 1Password, copies to the clipboard  a
 		<key>1266D124-1E29-4A19-B1B8-A65153CB3227</key>
 		<dict>
 			<key>xpos</key>
-			<real>995.0</real>
+			<real>995</real>
 			<key>ypos</key>
-			<real>175.0</real>
+			<real>175</real>
 		</dict>
 		<key>1FBF32EB-D94B-4BA9-BFB5-A84372C6A3E5</key>
 		<dict>
 			<key>xpos</key>
-			<real>690.0</real>
+			<real>690</real>
 			<key>ypos</key>
-			<real>45.0</real>
+			<real>45</real>
 		</dict>
 		<key>732400a2-1512-4367-ae61-25c9ff63e34f</key>
 		<dict>
 			<key>xpos</key>
-			<real>515.0</real>
+			<real>515</real>
 			<key>ypos</key>
-			<real>15.0</real>
+			<real>15</real>
 		</dict>
 		<key>8D38EE55-17FC-42E8-B152-C2BD45E6E29F</key>
 		<dict>
 			<key>note</key>
 			<string>Wait to clear clipboard if unchanged</string>
 			<key>xpos</key>
-			<real>835.0</real>
+			<real>835</real>
 			<key>ypos</key>
-			<real>145.0</real>
+			<real>145</real>
 		</dict>
 		<key>AEC674F1-8C51-401A-AB83-23E39B07AE78</key>
 		<dict>
 			<key>xpos</key>
-			<real>335.0</real>
+			<real>335</real>
 			<key>ypos</key>
-			<real>15.0</real>
+			<real>15</real>
 		</dict>
 		<key>C57FC5ED-AB46-4301-B0A4-1FA07DFA586F</key>
 		<dict>
 			<key>xpos</key>
-			<real>1080.0</real>
+			<real>1080</real>
 			<key>ypos</key>
-			<real>145.0</real>
+			<real>145</real>
 		</dict>
 		<key>C592CA81-9A14-4E8F-80A9-715DD25E98B8</key>
 		<dict>
 			<key>xpos</key>
-			<real>735.0</real>
+			<real>735</real>
 			<key>ypos</key>
-			<real>175.0</real>
+			<real>175</real>
 		</dict>
 		<key>CDD7742F-9D93-4110-8FF2-539265EC6C0C</key>
 		<dict>
 			<key>xpos</key>
-			<real>835.0</real>
+			<real>835</real>
 			<key>ypos</key>
-			<real>15.0</real>
+			<real>15</real>
 		</dict>
 		<key>E632E482-35CC-4947-92F0-C9312695B72C</key>
 		<dict>
@@ -412,9 +412,9 @@ Reads the configured secret reference from 1Password, copies to the clipboard  a
 
 I use ⌃⌥⇧1 (MEH-1 when using QMK firmware).</string>
 			<key>xpos</key>
-			<real>160.0</real>
+			<real>160</real>
 			<key>ypos</key>
-			<real>15.0</real>
+			<real>15</real>
 		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>
@@ -439,6 +439,27 @@ I use ⌃⌥⇧1 (MEH-1 when using QMK firmware).</string>
 			<string>textfield</string>
 			<key>variable</key>
 			<string>op_ref</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string>my.1password.com</string>
+				<key>placeholder</key>
+				<string></string>
+				<key>required</key>
+				<true/>
+				<key>trim</key>
+				<true/>
+			</dict>
+			<key>description</key>
+			<string>Specify 1Password account (from `op account list`)</string>
+			<key>label</key>
+			<string>1Password account</string>
+			<key>type</key>
+			<string>textfield</string>
+			<key>variable</key>
+			<string>op_account</string>
 		</dict>
 		<dict>
 			<key>config</key>
