@@ -15,7 +15,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v7.0.1
+      with:
+        fetch-tags: true
 
     - name: Set up Python 3.9
       uses: actions/setup-python@v7.0.0
@@ -37,7 +39,8 @@ jobs:
       uses: mikepenz/release-changelog-builder-action@v6.4.0
       with:
         platform: gitea
-        baseUrl: ${{ gitea.api_url }}
+        baseUrl: ${{ gitea.server_url }}
+        mode: commit
       env:
         GITEA_TOKEN: ${{ secrets.GITEA_TOKEN }}
 
