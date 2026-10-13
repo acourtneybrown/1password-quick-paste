@@ -18,6 +18,7 @@ jobs:
     - uses: actions/checkout@v7.0.1
       with:
         fetch-tags: true
+        fetch-depth: 0
 
     - name: Set up Python 3.9
       uses: actions/setup-python@v7.0.0
@@ -40,7 +41,6 @@ jobs:
       with:
         platform: gitea
         baseUrl: ${{ gitea.server_url }}
-        mode: commit
       env:
         GITEA_TOKEN: ${{ secrets.GITEA_TOKEN }}
 
